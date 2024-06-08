@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        const reyes=[
+            {
+                nombre: 'Atanagildo',
+                reindado:15,
+                vacasComidas:9
+            },
+            {
+                nombre: 'Ervigio',
+                reindado:7,
+                vacasComidas:3
+            },
+            {
+                nombre: 'Ataúlfo',
+                reindado:5,
+                vacasComidas:16
+            }
+        ]
+
+        window.onload=inicio;
+
+        function inicio(){
+            const resultado=reyes.map( valor => {
+                let texto=`<div>El rey ${valor.nombre} come ${valor.vacasComidas} de vacas al día</div>`
+                escritura(texto) 
+                return texto;
+        } 
+            );
+            console.log(resultado);
+        }
+
+
+        function escritura(dato){
+document.querySelector('.caja').insertAdjacentHTML('beforeend', dato);
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="caja"></div>
+</body>
+</html>

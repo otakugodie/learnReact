@@ -1,0 +1,48 @@
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: -250px;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.sidebar.open {
+    width: 30%;
+    right: 0;
+}
+
+
+
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .tab.active {
+    background-color: hsl(0deg 0% 68.82%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tab:hover {
+    background-color: hsl(0deg 0% 68.82%);
+  }
+
+
+

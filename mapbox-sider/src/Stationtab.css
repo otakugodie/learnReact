@@ -1,0 +1,98 @@
+.stations-tab {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 150px;
+  }
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cleanfilters {
+  display: flex;
+  align-items: center;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center; /* Centrar verticalmente */
+}
+  
+.filter-button {
+  height: 32px; /* Ajustar el tamaño vertical */
+}
+
+.convention {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.item-convention {
+  display: flex;
+  align-items: center;
+}
+
+.item-convention img {
+  height: 10px;
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+
+.stations-list{
+  
+}
+
+.container-station{
+  display: grid;
+  /* border: 1px dotted red; */
+  grid-template-columns: auto 1fr 1fr; 
+  grid-template-rows: 1fr 1fr;
+  gap: 2px; 
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  
+  grid-template-areas: 
+    "pin-station location-station operator-station"
+    "pin-station points-station points-station"; 
+  
+}
+
+.pin-station{
+  /* width: 15%; */
+  grid-area: pin-station;
+  margin: 15px;  
+  align-self: flex-start;
+  /* border: 1px dotted red; */
+}
+
+
+.location-station{
+
+  grid-area: location-station;
+  /* border: 1px dotted red;  */
+}
+
+.operator-station{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; /* Alinea el contenido al final */
+  flex-direction: column; /* Cambia la dirección de columna */  
+  grid-area: operator-station;
+  
+}
+
+.points-station{
+  
+  display: flex;
+  justify-content: space-between;
+  grid-area: points-station;
+  
+}
